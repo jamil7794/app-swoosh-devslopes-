@@ -13,6 +13,7 @@ class LeagueVC: UIViewController {
     
     var p: player!
     
+    //Prepare for segue is always called before viewdidload()
     override func viewDidLoad() {
         super.viewDidLoad()
         p = player()
@@ -38,4 +39,9 @@ class LeagueVC: UIViewController {
         nextBtn.isEnabled=true
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let skillVC = segue.destination as? SkillVC{
+            skillVC.Player=p
+        }
+    }
 }
