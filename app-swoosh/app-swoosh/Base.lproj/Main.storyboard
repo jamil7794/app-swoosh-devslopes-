@@ -223,7 +223,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ndy-qw-t90" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="j7b-SM-63O" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="782" y="134"/>
+            <point key="canvasLocation" x="820" y="134"/>
         </scene>
         <!--SkillVC-->
         <scene sceneID="Yoa-wb-EIh">
@@ -233,9 +233,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beginnerBallerBG" translatesAutoresizingMaskIntoConstraints="NO" id="zMA-EJ-Wd3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginnerBallerBG" translatesAutoresizingMaskIntoConstraints="NO" id="zMA-EJ-Wd3">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="5v2-iF-yGV">
                                 <rect key="frame" x="8" y="40" width="359" height="67"/>
@@ -293,25 +292,43 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lw-jA-XkE">
+                                <rect key="frame" x="0.0" y="0.0" width="55" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="C0r-Ef-f6p"/>
+                                    <constraint firstAttribute="width" constant="55" id="xM6-he-aaU"/>
+                                </constraints>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="Lem-4S-HGt" kind="unwind" unwindAction="unWindFromSKVCWithUnwind:" id="Te4-b0-UrP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="GtW-hx-384" firstAttribute="leading" secondItem="JH4-Qa-6TG" secondAttribute="leading" constant="16" id="0Qt-xA-KxQ"/>
                             <constraint firstItem="JH4-Qa-6TG" firstAttribute="trailing" secondItem="5v2-iF-yGV" secondAttribute="trailing" constant="8" id="1no-qJ-PWn"/>
                             <constraint firstItem="5v2-iF-yGV" firstAttribute="leading" secondItem="JH4-Qa-6TG" secondAttribute="leading" constant="8" id="2pl-MM-PNf"/>
+                            <constraint firstItem="7lw-jA-XkE" firstAttribute="leading" secondItem="JH4-Qa-6TG" secondAttribute="leading" id="FlI-kL-n1Z"/>
                             <constraint firstItem="OGe-lC-sPZ" firstAttribute="top" secondItem="5v2-iF-yGV" secondAttribute="bottom" constant="50" id="V9A-fD-rkb"/>
+                            <constraint firstItem="zMA-EJ-Wd3" firstAttribute="bottom" secondItem="JH4-Qa-6TG" secondAttribute="bottom" id="VD1-Ow-g12"/>
                             <constraint firstItem="OGe-lC-sPZ" firstAttribute="leading" secondItem="JH4-Qa-6TG" secondAttribute="leading" constant="16" id="cLI-g8-gzG"/>
+                            <constraint firstItem="zMA-EJ-Wd3" firstAttribute="top" secondItem="pOz-f5-DED" secondAttribute="top" id="d5s-7a-e4Y"/>
                             <constraint firstItem="JH4-Qa-6TG" firstAttribute="trailing" secondItem="GtW-hx-384" secondAttribute="trailing" constant="16" id="g7L-N9-hgq"/>
                             <constraint firstItem="JH4-Qa-6TG" firstAttribute="bottom" secondItem="GtW-hx-384" secondAttribute="bottom" constant="20" id="lcZ-UW-WEH"/>
                             <constraint firstItem="JH4-Qa-6TG" firstAttribute="trailing" secondItem="OGe-lC-sPZ" secondAttribute="trailing" constant="16" id="oSn-lO-DyO"/>
+                            <constraint firstItem="7lw-jA-XkE" firstAttribute="top" secondItem="pOz-f5-DED" secondAttribute="top" id="oSo-hq-FAD"/>
+                            <constraint firstItem="zMA-EJ-Wd3" firstAttribute="trailing" secondItem="JH4-Qa-6TG" secondAttribute="trailing" id="oXc-hc-3ZF"/>
                             <constraint firstItem="5v2-iF-yGV" firstAttribute="top" secondItem="JH4-Qa-6TG" secondAttribute="top" constant="20" id="oax-hV-1b4"/>
+                            <constraint firstItem="zMA-EJ-Wd3" firstAttribute="leading" secondItem="JH4-Qa-6TG" secondAttribute="leading" id="sIL-Pw-cI3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JH4-Qa-6TG"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HAY-lB-982" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Lem-4S-HGt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1583" y="134"/>
+            <point key="canvasLocation" x="1512.8" y="133.5832083958021"/>
         </scene>
     </scenes>
     <resources>

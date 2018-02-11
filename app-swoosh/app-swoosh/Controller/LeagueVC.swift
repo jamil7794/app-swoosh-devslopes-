@@ -16,7 +16,12 @@ class LeagueVC: UIViewController {
     //Prepare for segue is always called before viewdidload()
     override func viewDidLoad() {
         super.viewDidLoad()
-        p = player()
+       // p = player()
+        print(p)
+    }
+    
+    @IBAction func unWindFromSKVC(unwind: UIStoryboardSegue){
+        
     }
     
     @IBAction func onNextTapped(_ sender: Any) {
