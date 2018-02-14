@@ -21,7 +21,7 @@ class WelcomeVC: UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let leagueVC = segue.destination as? LeagueVC{
-           leagueVC.p = Player
+           leagueVC.p = Player // League VC
         }
     }
 }
