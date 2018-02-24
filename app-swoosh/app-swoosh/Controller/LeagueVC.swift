@@ -16,8 +16,8 @@ class LeagueVC: UIViewController {
     //Prepare for segue is always called before viewdidload()
     override func viewDidLoad() {
         super.viewDidLoad()
-       // p = player()
-        print(p)
+        p = player()
+ 
     }
     
     @IBAction func unWindFromSKVC(unwind: UIStoryboardSegue){
@@ -39,7 +39,7 @@ class LeagueVC: UIViewController {
         selectLeague(leagueType: "Coed")
     }
     
-    func selectLeague(leagueType :String){
+    func selectLeague(leagueType: String){
         p.desiredLeague=leagueType
         nextBtn.isEnabled=true
     }
